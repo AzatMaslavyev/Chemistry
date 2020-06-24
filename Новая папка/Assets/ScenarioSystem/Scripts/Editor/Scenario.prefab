@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7628543789189136662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7628543789189136648}
+  - component: {fileID: 7628543789189136649}
+  m_Layer: 0
+  m_Name: Scenario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7628543789189136648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7628543789189136662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.84938765, y: 1.4814538, z: -6.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7628543789189136649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7628543789189136662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8b6c684b6141d43a4c15cda6fae6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allSteps:
+  - id: 0
+    nextSteps: 02000000
+    prevSteps: 
+    rect:
+      serializedVersion: 2
+      x: 375
+      y: 355
+      width: 140
+      height: 50
+    strings: []
+    ints: 
+    floats: []
+    gameObjects: []
+    scriptableObjectName: ScenarioStartAction
+  - id: 1
+    nextSteps: 
+    prevSteps: 02000000
+    rect:
+      serializedVersion: 2
+      x: 847
+      y: 333
+      width: 100
+      height: 130
+    strings:
+    - q
+    - 55
+    ints: 
+    floats: []
+    gameObjects:
+    - {fileID: 0}
+    scriptableObjectName: WaitEnter
+  - id: 2
+    nextSteps: 01000000
+    prevSteps: 00000000
+    rect:
+      serializedVersion: 2
+      x: 670
+      y: 335
+      width: 100
+      height: 130
+    strings:
+    - e
+    - sda
+    ints: 
+    floats: []
+    gameObjects:
+    - {fileID: 0}
+    scriptableObjectName: WaitEnter
+  stepUsedCount: 
+  interactingObject: {fileID: 0}
